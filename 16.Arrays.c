@@ -35,5 +35,30 @@ int main() {
     }
     printf("Maximum element: %d\n", max);
 
+        // 2D array
+    int matrix[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    // Accessing and modifying 2D array elements
+    printf("2D Array elements:\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+
+    // Array of strings
+    char names[][20] = {"Alice", "Bob", "Charlie", "David", "Eve"};
+
+    // Print the  array of strings
+    for (int i = 0; i < sizeof(names) / sizeof(names[0]); i++) {
+        printf("%s\n", names[i]);
+    }
+    printf("\n");
+
     return 0;
 }
